@@ -1,6 +1,6 @@
 /*
 
-	Algo:
+	Algo: Uses Merge Sort Concepts
 	1. Implement the merge sort algorithm 
 	2. Merge the two sorted array using merge function to sort the combined array
 	3. Eliminate dublicates if any
@@ -93,16 +93,14 @@ int main(int argc, char const *argv[])
         {
             scanf("%d", &arrR[i]);
         }
-
+	//Seperately sort two arrays
         MergeSort(arrL, l1);
-		MergeSort(arrR, l2);
-		Merge(arr, arrL, l1, arrR, l2);
-        
-		Nodublicates(arr, (l1+l2));
+	MergeSort(arrR, l2);
+    	//Merge and sort the final array
+	Merge(arr, arrL, l1, arrR, l2);
+	//Removes all the dublicates
+	Nodublicates(arr, (l1+l2));
 
-		
-		printf("\n%d", maxCourseMarks(arr, (l1+l2)));
-        
     }
     
 	free(arrL);
