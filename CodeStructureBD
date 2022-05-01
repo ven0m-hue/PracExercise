@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-01T07:15:13.871Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36" etag="qiDzMUDFtzZpPigTJNsN" version="17.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-01T07:18:29.172Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36" etag="HvxQIr39nB_328dFbYJP" version="17.5.0" type="github">
   <diagram id="M2Xz7H-At6FGttR16bf0" name="Page-1">
     <mxGraphModel dx="1183" dy="1798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -65,6 +65,9 @@
           <mxGeometry x="-0.0109" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="fZ5Tcahk0kNMSCr6k0u5-144" value="choice=NULL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fZ5Tcahk0kNMSCr6k0u5-23" target="fZ5Tcahk0kNMSCr6k0u5-142">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fZ5Tcahk0kNMSCr6k0u5-23" value="Case" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="308" y="-510" width="100" height="100" as="geometry" />
@@ -151,6 +154,9 @@
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="fZ5Tcahk0kNMSCr6k0u5-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fZ5Tcahk0kNMSCr6k0u5-63" target="fZ5Tcahk0kNMSCr6k0u5-86">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fZ5Tcahk0kNMSCr6k0u5-63" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="635" y="185" width="40" height="40" as="geometry" />
@@ -241,7 +247,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fZ5Tcahk0kNMSCr6k0u5-86" value="DetectUpperLimit()" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="710" y="425" width="120" height="100" as="geometry" />
+          <mxGeometry x="730" y="425" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="fZ5Tcahk0kNMSCr6k0u5-87" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=12;" edge="1" parent="1" source="fZ5Tcahk0kNMSCr6k0u5-89">
           <mxGeometry relative="1" as="geometry">
@@ -281,7 +287,7 @@
         <mxCell id="fZ5Tcahk0kNMSCr6k0u5-96" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="fZ5Tcahk0kNMSCr6k0u5-97" target="fZ5Tcahk0kNMSCr6k0u5-98">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fZ5Tcahk0kNMSCr6k0u5-97" value="Send the command to the FCU stating success in operation and halt&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="fZ5Tcahk0kNMSCr6k0u5-97" value="SendCmdToFCU()&lt;br&gt;status = scuess" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="630" y="910" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="fZ5Tcahk0kNMSCr6k0u5-98" value="END" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=12;" vertex="1" parent="1">
@@ -384,6 +390,15 @@
         </mxCell>
         <mxCell id="fZ5Tcahk0kNMSCr6k0u5-140" value="ServoMotorPWMGenerator()" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="848.75" y="830" width="162.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fZ5Tcahk0kNMSCr6k0u5-141" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="fZ5Tcahk0kNMSCr6k0u5-142" target="fZ5Tcahk0kNMSCr6k0u5-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fZ5Tcahk0kNMSCr6k0u5-142" value="SendCmdToFCU()&lt;br&gt;status = failure" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="303" y="-360" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fZ5Tcahk0kNMSCr6k0u5-143" value="END" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="315" y="-260" width="85" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
